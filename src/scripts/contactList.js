@@ -14,9 +14,9 @@ const contactList = {
            contactFragment.appendChild(contactHTML2);
        })
 
-
        let outputArticle = document.querySelector(".output")
-       outputArticle.appendChild(contactFragment);
+        outputArticle.appendChild(contactFragment);
+
 
 
 
