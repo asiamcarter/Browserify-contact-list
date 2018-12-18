@@ -1,3 +1,10 @@
 {
-    "contacts": []
+  "contacts": [
+    {
+      "name": "Asia",
+      "number": "61555555",
+      "address": "111 Doorman Drive",
+      "id": 1
+    }
+  ]
 }
