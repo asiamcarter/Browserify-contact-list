@@ -40,7 +40,7 @@ const contactForm = {
         }
 
     contactCollection.saveContact(contactObject);
-    contactList.getAllContacts();
+    location.reload(true);
 
 
     }
