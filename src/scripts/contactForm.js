@@ -25,6 +25,7 @@ const contactForm = {
         `
         let displayContainer = document.querySelector(".output");
         displayContainer.innerHTML = inputForm;
+        displayContainer
 
     },
 
@@ -39,11 +40,13 @@ const contactForm = {
             address: address
         }
 
-    contactCollection.saveContact(contactObject);
-    location.reload(true);
+    contactCollection.saveContact(contactObject)
+    .then (function () {
+    contactList.getAllContacts();
+    })
+}
+    // location.reload(true);
 
-
-    }
 
 };
 
