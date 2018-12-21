@@ -5,8 +5,6 @@ const contactList = {
   getAllContacts() {
       contactCollection.getContactList()
       .then(allContacts => {
-          console.log("allContacts:", allContacts)
-
         let contactFragment = document.createDocumentFragment()
 
        allContacts.forEach(contactIteration => {
@@ -14,8 +12,11 @@ const contactList = {
            contactFragment.appendChild(contactHTML2);
        })
 
-       let outputArticle = document.querySelector(".output")
-        outputArticle.appendChild(contactFragment);
+       let contactListArticle = document.querySelector(".contactList")
+       while (contactListArticle.firstChild) {
+           contactListArticle.removeChild(contactListArticle.firstChild)
+       }
+        contactListArticle.appendChild(contactFragment);
 
 
 
